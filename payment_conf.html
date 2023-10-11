@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Completed Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .confirmation-container {
+            margin: 50px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="confirmation-container">
+        <h1>Payment Completed</h1>
+        <p>Thank you for your payment. Your transaction has been successfully processed.</p>
+        <p>Amount Paid: <strong><span id="amountPaidPlaceholder"></span></strong></p>
+        <p>Payment Date: <strong><span id="currentDatePlaceholder"></span></strong></p>
+        <p>For any inquiries or issues, please call/whatsapp +91-9236830966</p>
+    </div>
+    <script src="payment.js"></script>
+    <script>
+
+const currentDate = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        const formattedDate = currentDate.toLocaleDateString('en-US', options);
+        document.getElementById('currentDatePlaceholder').textContent = formattedDate;
+
+        // Retrieve the amount paid from local storage
+        const amountPaid = localStorage.getItem('amountPaid');
+
+        // Insert the amount into the placeholder
+        document.getElementById('amountPaidPlaceholder').textContent = `$${amountPaid}`;
+    </script>
+</body>
+</html>
