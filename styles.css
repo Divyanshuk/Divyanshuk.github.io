@@ -25,3 +25,102 @@ label {
     margin: 0;
     padding: 0;
 }
+
+.carousel-item {
+    max-height: 800px;
+    text-align: center;
+}
+
+.carousel-item img {
+    max-width:100%;
+    max-height:100%;
+    vertical-align: middle;
+}
+
+
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+  }
+  
+  @media (max-width: 768px) {
+    #container {
+      padding-top: 10px;
+      flex-direction: column;
+    }
+    .social-icons {
+      margin-top: 10px; /* Adjust the margin as needed */
+    }
+  }
+  
+  
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+.map-widget {
+    width: 100%;
+    /* max-width: 600px; */
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.map-frame {
+    width: 100%;
+    height: 200px;
+}
+.review-button {
+    background-color: #0077B5;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    /* max-width: 500px; */
+}
+.review-button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
