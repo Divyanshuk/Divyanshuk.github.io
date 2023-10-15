@@ -26,26 +26,56 @@ body {font-family: "Lato", sans-serif}
 </head>
 <body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
-    <a href="#book" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BOOK</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <!--<button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
-        <a href="#" class="w3-bar-item w3-button">Extras</a>
-        <a href="#" class="w3-bar-item w3-button">Media</a>
+  <!-- Navbar START-->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark w3-black">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Yoga Siddharth</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
-      -->
     </div>
-    <!--<a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>-->
+  </nav>
+
+<!-- Navbar END -->
+
+<!-- Bootstrap Navbar START-->
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">HOME</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#book">BOOK</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">CONTACT</a>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
+</nav> -->
+<!-- Bootstrap Navbar END -->
+
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
@@ -290,7 +320,7 @@ body {font-family: "Lato", sans-serif}
 
 <div class="map-widget">
   <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d83.0072026!3d25.3018181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e31e4773eaa29%3A0x81950af9a19ea80d!2sSidharth%20Yoga%20Centre!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"></iframe>
-  <div class="review-button">
+  <div class="review-button w3-black">
       <a href="https://www.google.com/maps/place/Sidharth+Yoga+Centre/@25.3018181,83.0072026,15z/data=!4m6!3m5!1s0x398e31e4773eaa29:0x81950af9a19ea80d!8m2!3d25.3018181!4d83.0072026!16s%2Fg%2F11b6dct1ln?entry=ttu" target="_blank">Leave a Review on Google Maps</a>
   </div>
 </div>
