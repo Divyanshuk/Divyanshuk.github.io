@@ -38,7 +38,6 @@ label {
 }
 
 
-
 #container {
     display: flex;
     justify-content: space-between;
@@ -124,3 +123,36 @@ body {
     background: #bb0000;
     color: white;
   }
+
+  /* FLoating Whatsapp */
+
+.whatsapp-float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:20px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.floating-maps {
+    position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:90px;
+	background-color:#0d4aac;
+	color:#FFF;
+	border-radius:50px;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #3573dd;
+  z-index:100;
+}
+
+
+  /* Floating Whatsapp end  */
