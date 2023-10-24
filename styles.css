@@ -44,20 +44,18 @@ label {
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 10px;
+    flex-direction: column;
   }
   
   .social-icons {
     display: flex;
+    margin-top: 10px; /* Adjust the margin as needed */
   }
-  
-  @media (max-width: 768px) {
-    #container {
-      padding-top: 10px;
-      flex-direction: column;
-    }
-    .social-icons {
-      margin-top: 10px; /* Adjust the margin as needed */
-    }
+
+  .social-icons .icon{
+    padding-left: 5px;
+    padding-right: 5px;
   }
   
   
