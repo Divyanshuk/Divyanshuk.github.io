@@ -65,7 +65,7 @@ paypal.Buttons({
             return false; // Prevent order creation
         }
 
-        perHeadPrice = (cschedule === "7 AM-8 AM (Yoga Beginner/Intermediate Private Class)" || cschedule === "6 AM - 7 AM (Pranayam Private Class)") ? 15 : 6;
+        perHeadPrice = (cschedule === "3:30 PM - 5 PM (Yoga Intermediate/Advance Private Class)" || cschedule === "7 AM-8 AM (Yoga Beginner/Intermediate Private Class)" || cschedule === "6 AM - 7 AM (Pranayam Private Class)") ? 15 : 6;
 
         finalprice = perHeadPrice*Number(cnumberOfPeople);
         finalprice = finalprice.toString();
